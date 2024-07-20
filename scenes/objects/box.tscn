@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk6y7ijtjum08"]
+
+[ext_resource type="Texture2D" uid="uid://btdk1li503wb3" path="res://graphics/objects/Box.png" id="1_3puip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4web"]
+size = Vector2(351, 252)
+
+[node name="Box" type="StaticBody2D"]
+
+[node name="Box" type="Sprite2D" parent="."]
+position = Vector2(1, 4)
+texture = ExtResource("1_3puip")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 6)
+shape = SubResource("RectangleShape2D_d4web")
